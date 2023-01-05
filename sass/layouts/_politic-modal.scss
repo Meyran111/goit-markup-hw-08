@@ -1,0 +1,81 @@
+/* politic modal */
+
+.modal-input__politic {
+  margin-left: 14px;
+  margin-top: 20px;
+}
+
+.politick__check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.politick__check2 {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--primary-title-color);
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  & svg {
+    fill: transparent;
+  }
+}
+
+label.politic__label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 1.16;
+    color: var(--primary-text-color);
+  }
+}
+
+.politick__check:checked + label > span {
+  border: none;
+  background-color: var(--accent-color);
+}
+
+.politick__check:checked + label > span svg {
+  fill: var(--primary-white-color);
+}
+
+.politic__link {
+  color: var(--accent-color);
+  margin-left: 5px;
+}
+
+.modal__btn {
+  display: block;
+  height: 50px;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  border: none;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  margin-top: 30px;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

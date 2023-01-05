@@ -1,0 +1,4 @@
+.text {
+  @include font(14, null, 24, null);
+  color: var(--primary-text-color);
+}

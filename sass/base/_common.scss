@@ -1,0 +1,30 @@
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+  transition: color 250ms var(--timing-function);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-white-color);
+}
+
+.footer {
+  background-color: var(--primary-bg-color);
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
